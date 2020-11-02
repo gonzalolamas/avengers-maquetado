@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Turret Road', cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(8,23,75);
+    background: linear-gradient(90deg, rgba(8,23,75,1) 55%, rgba(135,20,20,1) 76%); 
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+.card img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50px);  
+    height: 400px;
+    transition: 0.5s;
+}
+
+.card:hover img{
+    left: 80%;
+    height: 500px;
+}
+
+.card .content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px ;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.card:hover .content{
+    opacity: 1;
+    visibility: visible;
+    left: 0%;
+}
+
+
+.card .content h2{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2.5em;
+}
+
+.card .content p{
+    color: white;
+}
+
+.card .content a{
+    position: relative;
+    top: 20px;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid rgba(135,20,20,1);
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: wavy;
+}
